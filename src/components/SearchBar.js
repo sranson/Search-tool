@@ -8,8 +8,10 @@ class SearchBar extends React.Component {
 
     // It is important to use the Arrow Function here so that the 'this' keyword points to the SearchBar class - will get 'undefined otherwise'
     onFormSubmit = (event) => {
-        event.preventDefault();             // prevents page from refreshing
-        console.log(this.state.term);
+        event.preventDefault();             
+        // Props is referring to a function in the parent component (App.js) that was passed down to child component (SearchBar) as a prop
+        // This prop/function takes in 'term' as an argument
+        this.props.onSubmit(this.state.term);           
     };
 
     render() {
