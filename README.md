@@ -18,3 +18,5 @@ This is a React Practice Application built while taking the Udemy course "Modern
 ## Contributing
 
 Stephen Grider (Instructor)
+
+Unsplash Developers (https://unsplash.com/developers)
