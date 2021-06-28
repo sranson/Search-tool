@@ -4,12 +4,10 @@ import './ImageList.css';
 
 class ImageCard extends React.Component {
     render() {
+        const {alt_description, urls} = this.props.image;
         return(
             <div>
-                <img 
-                    alt={this.props.image.alt_description}
-                    src={this.props.image.urls.regular}
-                />
+                <img alt={alt_description} src={urls.regular} />
             </div>
         )
     }
